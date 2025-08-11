@@ -1,0 +1,38 @@
+[
+  {
+    "name": "PM Vishwakarma",
+    "type": "CS",
+    "ministry": "MoMSME",
+    "year": "2023",
+    "category": "MSME Development",
+    "summary": "Aims at improving the quality as well as the reach of products and services of artisans and craftspeople and to ensure that they are integrated into the domestic and global value chains.",
+    "state": "Central"
+  },
+  {
+    "name": "Amrit Bharat Station Scheme",
+    "type": "CSS",
+    "ministry": "MoR",
+    "year": "2023",
+    "category": "Transportation",
+    "summary": "Scheme to redevelop existing railway stations and make stations more comfortable and convenient for passengers, and to transform them into vibrant city centers.",
+    "state": "Central"
+  },
+  {
+    "name": "Vajpayee Arogyasri Yojana",
+    "type": "State Sponsored",
+    "ministry": "",
+    "year": "",
+    "category": "State Specific",
+    "summary": "",
+    "state": "Karnataka"
+  },
+  {
+    "name": "Ladli Laxmi Yojana",
+    "type": "State Sponsored",
+    "ministry": "",
+    "year": "",
+    "category": "State Specific",
+    "summary": "",
+    "state": "Madhya Pradesh"
+  }
+]
