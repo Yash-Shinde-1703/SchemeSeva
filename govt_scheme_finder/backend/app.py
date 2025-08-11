@@ -27,16 +27,21 @@ def index():
     filtered_schemes = schemes
     selected_category = "All"
     selected_state = "All"
+    search_query = ""
 
     if request.method == 'POST':
         selected_category = request.form.get('category')
         selected_state = request.form.get('state')
+        search_query = request.form.get('search')
 
         if selected_category and selected_category != 'All':
             filtered_schemes = [s for s in filtered_schemes if s.get('category') == selected_category]
 
         if selected_state and selected_state != 'All':
             filtered_schemes = [s for s in filtered_schemes if s.get('state') == selected_state]
+
+        if search_query:
+            filtered_schemes = [s for s in filtered_schemes if search_query.lower() in s['name'].lower()]
 
     states = sorted(list(set(s['state'] for s in schemes if 'state' in s)))
 
@@ -45,7 +50,8 @@ def index():
                            categories=categories,
                            states=states,
                            selected_category=selected_category,
-                           selected_state=selected_state)
+                           selected_state=selected_state,
+                           search_query=search_query)
 
 if __name__ == '__main__':
     app.run(debug=True)
